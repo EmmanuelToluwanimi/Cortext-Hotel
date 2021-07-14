@@ -17,15 +17,15 @@
     margin-bottom: 0px;
 }
 
-.footerLogo span{
+.footerLogo span {
     color: #FF9000;
 }
 
-.kkk{
+.kkk {
     display: flex;
 }
 
-.logoText{
+.logoText {
     /* text-align: center; */
     /* font-size: 24px; */
     border: 2px dashed white;
@@ -34,7 +34,7 @@
     margin: auto;
 }
 
-.footerDetails{
+.footerDetails {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -42,7 +42,7 @@
     color: rgb(185, 180, 180);
 }
 
-.fdetail{
+.fdetail {
     text-align: center;
 }
 
@@ -52,8 +52,13 @@
 }
 
 @media screen and (max-width: 600px) {
-    .footerDetails{
+    .footerDetails {
         flex-direction: column;
         gap: 20px;
+    }
+    .footer {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/images/mobileImage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }

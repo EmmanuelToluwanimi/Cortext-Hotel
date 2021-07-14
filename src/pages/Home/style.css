@@ -234,6 +234,9 @@
 @media screen and (max-width: 600px) {
     #hero {
         padding: 30px 5px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/mobileImage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .heroTitle {
         font-size: 30px;
@@ -249,6 +252,11 @@
     }
     .midTitle {
         font-size: 20px;
+    }
+    .midSection {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/images/mobileImage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .midSection .bookBtn {
         display: block;
