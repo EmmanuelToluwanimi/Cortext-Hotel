@@ -14,7 +14,6 @@ function Nav() {
         setIsOpen(!isOpen);
     }
 
-
     const Sidebar = (
         <div className="sidebar">
             <div className="navItems_sm">
