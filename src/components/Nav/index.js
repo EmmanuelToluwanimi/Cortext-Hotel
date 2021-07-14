@@ -18,11 +18,11 @@ function Nav() {
         <div className="sidebar">
             <div className="navItems_sm">
                 <div className="navLink_sm">
-                    <Linkscroll to="rooms">Home</Linkscroll>
+                    <Linkscroll smooth={true} duration={1000} spy={true} to="hero">Home</Linkscroll>
                 </div>
 
                 <div className="navLink_sm">
-                    <Linkscroll to="about">About</Linkscroll>
+                    <Linkscroll smooth={true} duration={1000} spy={true} to="about">About</Linkscroll>
                 </div>
 
                 <div className="navLink_sm">
@@ -30,12 +30,12 @@ function Nav() {
                 </div>
 
                 <div className="navLink_sm">
-                    <Linkscroll to="services">Services</Linkscroll>
+                    <Linkscroll smooth={true} duration={1000} spy={true} to="services">Services</Linkscroll>
                 </div>
 
-                <div className="navLink_sm">
+                {/* <div className="navLink_sm">
                     <Linkscroll to="features">Features</Linkscroll>
-                </div>
+                </div> */}
 
                 <div className="navBtn_sm">
                     <button className="bookBtn_sm">Book now <BsBookmarkPlus className="icn" /></button>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { BsBookmarkPlus, BsLifePreserver } from 'react-icons/bs';
@@ -7,9 +7,15 @@ import { CgSmartHomeWashMachine } from 'react-icons/cg';
 import { FaParking, FaSwimmer } from 'react-icons/fa';
 import { Link as Linkscroll } from 'react-scroll';
 import Footer from '../../components/Footer';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 function Home() {
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, []);
+
     const services = [
         {
             name: 'Private Workspace',
@@ -63,7 +69,7 @@ function Home() {
                     <h2>About Us</h2>
                     <div className="hrs"></div>
                 </div>
-                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
 
                     <div className="aboutContainer">
                         <div className="aboutBanner">
@@ -122,8 +128,8 @@ function Home() {
                 </div>
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                     <div>
-                        <ScrollAnimation animateIn="bounceInRight" animateOut="bounceInLeft">
-                            <h1  className="roomTitle">Availble Rooms & Suites</h1>
+                        <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut">
+                            <h1 className="roomTitle">Availble Rooms & Suites</h1>
                             <div className="roomLinkblock">
                                 <Linkscroll to="rooms" className="roomLink">See all Rooms</Linkscroll>
                                 <div className="xyz"></div>
@@ -131,27 +137,27 @@ function Home() {
                         </ScrollAnimation>
                     </div>
                     <div className="roomWrapper">
-                        <div className="suite card shadow suite1">
+                        <div data-aos="fade-in" className="suite card shadow suite1">
                             <h4 className="suiteCaption">
                                 Modern Room
                             </h4>
                         </div>
-                        <div className="suite card shadow suite2">
+                        <div data-aos="fade-in" className="suite card shadow suite2">
                             <h4 className="suiteCaption">
                                 Luxe Room
                             </h4>
                         </div>
-                        <div className="suite card shadow suite3">
+                        <div data-aos="fade-in" className="suite card shadow suite3">
                             <h4 className="suiteCaption">
                                 Grand Delux Room
                             </h4>
                         </div>
                     </div>
                 </ScrollAnimation>
-                
+
             </section>
 
-            <Footer/>
+            <Footer />
         </>
     )
 }
