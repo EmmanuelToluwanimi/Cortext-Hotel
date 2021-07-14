@@ -77,6 +77,7 @@ function Nav() {
                     </div>
 
                     <div className="navActions">
+
                         <div className="navCart btn">
                             <Linkscroll to="rooms">
                                 <FaCartPlus /><Badge bg="danger">0</Badge>
@@ -90,6 +91,7 @@ function Nav() {
                         <div className="navBtn">
                             <button className="bookBtn">Book now <BsBookmarkPlus className="icn" /></button>
                         </div>
+                        
                     </div>
 
                 </nav>
