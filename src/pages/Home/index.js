@@ -6,6 +6,7 @@ import { FiMonitor, FiWifi } from 'react-icons/fi';
 import { CgSmartHomeWashMachine } from 'react-icons/cg';
 import { FaParking, FaSwimmer } from 'react-icons/fa';
 import { Link as Linkscroll } from 'react-scroll';
+import Footer from '../../components/Footer';
 
 
 function Home() {
@@ -150,6 +151,7 @@ function Home() {
                 
             </section>
 
+            <Footer/>
         </>
     )
 }

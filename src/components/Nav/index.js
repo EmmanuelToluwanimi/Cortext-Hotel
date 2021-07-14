@@ -4,7 +4,7 @@ import './style.css'
 import { Link as Linkscroll } from 'react-scroll';
 import { FaCartPlus } from 'react-icons/fa';
 import { BsBookmarkPlus } from 'react-icons/bs';
-import Badge from 'react-bootstrap/Badge'
+import Badge from 'react-bootstrap/Badge';
 // import {Navbar, Container} from 'react-bootstrap';
 
 function Nav() {
