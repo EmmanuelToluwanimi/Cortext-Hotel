@@ -1,0 +1,263 @@
+#hero {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/rakabtw_-M3YuHIpgmSY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+    padding: 30px 60px;
+    text-align: center;
+}
+
+.heroCaption {
+    /* background: red; */
+    margin-top: 200px;
+    color: white;
+}
+
+.heroWelcome {
+    letter-spacing: 3px;
+}
+
+.heroTitle {
+    font-size: 60px;
+    padding: 20px 0px;
+}
+
+.heroText {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hr {
+    height: 3px;
+    width: 70px;
+    background: white;
+}
+
+.bookBtn_hero {
+    border-radius: 5px;
+    background-color: #FF9000;
+    color: white;
+    /* font-weight: 500; */
+    padding: 5px 15px;
+    border: none;
+}
+
+/* About section */
+
+.sectionWrapper {
+    padding: 30px 60px;
+}
+
+.sectionTitle {
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+
+.sectionTitle>h2 {
+    text-align: center;
+}
+
+.hrs {
+    margin: auto;
+    width: 70px;
+    height: 5px;
+    background-color: #FF9000;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+.aboutBanner {
+    width: 50%;
+    /* text-align: center; */
+}
+
+.aboutCaption {
+    width: 50%;
+}
+
+.aboutImg {
+    width: 80%;
+}
+
+/* service */
+
+.serviceHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    text-align: center;
+    font-size: 24px;
+    width: 30%;
+    padding: 10px 20px;
+}
+
+.serviceIcons {
+    font-size: 50px;
+    color: #FF9000;
+}
+
+.midSection {
+    padding: 20px 60px 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/rakabtw_-M3YuHIpgmSY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+.midTitle {
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+/* rooms $ suites */
+
+.roomLink {
+    text-decoration: none !important;
+    color: #FF9000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.roomLink:hover {
+    color: #FF9000;
+}
+
+.xyz {
+    width: 70px;
+    height: 2px;
+    background-color: #FF9000;
+    /* display: inline; */
+}
+
+.roomLinkblock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    /* margin-left: auto; */
+}
+
+.roomTitle {
+    margin-bottom: 0px;
+}
+
+.roomWrapper {
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.suite1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://bslthemes.site/sochi/wp-content/uploads/2020/10/image_room_04.jpg);
+}
+
+.suite2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://bslthemes.site/sochi/wp-content/uploads/2020/10/image_room_02-900x596.jpg);
+}
+
+.suite3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://bslthemes.site/sochi/wp-content/uploads/2020/10/image_room_03-900x600.jpg);
+}
+
+.suite {
+    width: 30%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+    /* background-attachment: fixed; */
+}
+
+.suiteCaption {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 30px;
+    /* height: 100%; */
+}
+
+@media screen and (max-width:960px) {
+    .aboutContainer {
+        flex-direction: column;
+    }
+    .aboutBanner {
+        width: 100%;
+        /* text-align: center; */
+    }
+    .aboutCaption {
+        width: 100%;
+    }
+    .aboutImg {
+        width: 100%;
+    }
+    .service {
+        width: 45%;
+    }
+    .roomWrapper{
+        gap: 10px;
+    }
+    .suite{ 
+        width: 45%;
+    }
+    .suite3{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #hero {
+        padding: 30px 5px;
+    }
+    .heroTitle {
+        font-size: 30px;
+    }
+    .heroText {
+        flex-direction: column;
+    }
+    .sectionWrapper {
+        padding: 30px;
+    }
+    .service {
+        width: 100%;
+    }
+    .midTitle {
+        font-size: 20px;
+    }
+    .midSection .bookBtn {
+        display: block;
+        margin: auto;
+    }
+    .roomLinkblock{
+        justify-content: start;
+    }
+    .suite{
+        width: 100%;
+    }
+}

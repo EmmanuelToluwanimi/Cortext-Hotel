@@ -47,54 +47,56 @@ function Nav() {
 
     return (
         <>
-            <nav className="navContainer">
-                <div className="navLogo">
-                    <Linkscroll to="rooms">
-                        <span>C</span>ortex
-                    </Linkscroll>
-                </div>
-
-                <div className="navItems">
-                    <div className="navLink">
-                        <Linkscroll to="rooms">Home</Linkscroll>
-                    </div>
-
-                    <div className="navLink">
-                        <Linkscroll to="about">About</Linkscroll>
-                    </div>
-
-                    <div className="navLink">
-                        <Linkscroll to="rooms">Rooms</Linkscroll>
-                    </div>
-
-                    <div className="navLink">
-                        <Linkscroll to="services">Services</Linkscroll>
-                    </div>
-
-                    <div className="navLink">
-                        <Linkscroll to="features">Features</Linkscroll>
-                    </div>
-                </div>
-
-                <div className="navActions">
-                    <div className="navCart btn">
+            <header>
+                <nav className="navContainer">
+                    <div className="navLogo">
                         <Linkscroll to="rooms">
-                            <FaCartPlus /><Badge bg="danger">0</Badge>
+                            <span>C</span>ortex
                         </Linkscroll>
                     </div>
-                    <div className="menuBar btn border" onClick={toggleBar}>
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                    </div>
-                    <div className="navBtn">
-                        <button className="bookBtn">Book now <BsBookmarkPlus className="icn" /></button>
-                    </div>
-                </div>
 
-            </nav>
+                    <div className="navItems">
+                        <div className="navLink">
+                            <Linkscroll to="rooms">Home</Linkscroll>
+                        </div>
 
-            {isOpen && Sidebar}
+                        <div className="navLink">
+                            <Linkscroll to="about">About</Linkscroll>
+                        </div>
+
+                        <div className="navLink">
+                            <Linkscroll to="rooms">Rooms</Linkscroll>
+                        </div>
+
+                        <div className="navLink">
+                            <Linkscroll to="services">Services</Linkscroll>
+                        </div>
+
+                        <div className="navLink">
+                            <Linkscroll to="features">Features</Linkscroll>
+                        </div>
+                    </div>
+
+                    <div className="navActions">
+                        <div className="navCart btn">
+                            <Linkscroll to="rooms">
+                                <FaCartPlus /><Badge bg="danger">0</Badge>
+                            </Linkscroll>
+                        </div>
+                        <div className="menuBar btn border" onClick={toggleBar}>
+                            <div className="bar"></div>
+                            <div className="bar"></div>
+                            <div className="bar"></div>
+                        </div>
+                        <div className="navBtn">
+                            <button className="bookBtn">Book now <BsBookmarkPlus className="icn" /></button>
+                        </div>
+                    </div>
+
+                </nav>
+
+                {isOpen && Sidebar}
+            </header>
         </>
     )
 }
