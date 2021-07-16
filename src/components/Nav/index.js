@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './style.css'
 // import { Link } from 'react-router-dom';
 import { Link as Linkscroll } from 'react-scroll';
 import { FaCartPlus } from 'react-icons/fa';
 import { BsBookmarkPlus } from 'react-icons/bs';
 import Badge from 'react-bootstrap/Badge';
-// import {Navbar, Container} from 'react-bootstrap';
+import ModalContext from '../../store/Modalcontext'
+
 
 function Nav() {
     const [isOpen, setIsOpen] = useState(false);
+    const modalValue = useContext(ModalContext);
 
     function toggleBar() {
         setIsOpen(!isOpen);
@@ -38,7 +40,7 @@ function Nav() {
                 </div> */}
 
                 <div className="navBtn_sm">
-                    <button className="bookBtn_sm">Book now <BsBookmarkPlus className="icn" /></button>
+                    <button className="bookBtn_sm" onClick={modalValue.toggleModal}>Book now <BsBookmarkPlus className="icn" /></button>
                 </div>
             </div>
         </div>
@@ -89,7 +91,7 @@ function Nav() {
                             <div className="bar"></div>
                         </div>
                         <div className="navBtn">
-                            <button className="bookBtn">Book now <BsBookmarkPlus className="icn" /></button>
+                            <button className="bookBtn" onClick={modalValue.toggleModal}>Book now <BsBookmarkPlus className="icn" /></button>
                         </div>
                         
                     </div>

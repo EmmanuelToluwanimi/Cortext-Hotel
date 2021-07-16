@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import './style.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { BsBookmarkPlus, BsLifePreserver } from 'react-icons/bs';
@@ -9,9 +9,13 @@ import { Link as Linkscroll } from 'react-scroll';
 import Footer from '../../components/Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Bookmodal from '../../components/BookModal';
+import ModalContext from '../../store/Modalcontext';
 
 
 function Home() {
+    const modalValue = useContext(ModalContext);
+
     useEffect(() => {
         Aos.init({ duration: 2000 })
     }, []);
@@ -57,12 +61,14 @@ function Home() {
                             <div className="heroText">
                                 <div>Make a Reservation</div>
                                 <div className="hr"></div>
-                                <button className="bookBtn_hero">Book now <BsBookmarkPlus className="icn" /></button>
+                                <button className="bookBtn_hero" onClick={modalValue.toggleModal}>Book now <BsBookmarkPlus className="icn" /></button>
                             </div>
                         </div>
                     </div>
                 </ScrollAnimation>
             </section>
+
+            {modalValue.modalState && <Bookmodal />}
 
             <section id="about" className="sectionWrapper">
                 <div className="sectionTitle">
@@ -118,7 +124,7 @@ function Home() {
 
             <section className="midSection">
                 <div className="midTitle">Providing High Quality Accommodation</div>
-                <button className="bookBtn">Book now <BsBookmarkPlus className="icn" /></button>
+                <button className="bookBtn" onClick={modalValue.toggleModal}>Book now <BsBookmarkPlus className="icn" /></button>
             </section>
 
             <section className="sectionWrapper">
